@@ -1,0 +1,64 @@
+/*color scheme
+#89bdd3;
+#9ad3de;
+#fff;
+#c9c9c9;
+#c0914d;
+*/
+
+html {
+  padding: none;
+}
+
+body {
+  background-color: #c9c9c9;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Positioning */
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Nav Bar */
+.nav img {
+  width: 60px;
+  margin-top: 50px;
+  margin-right: 30px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+}
+
+.nav {
+  width: 135px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+}
+
+.nav li {
+  display: block;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 12px;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: 0px;
+  line-height: 24px;
+}
+
+.nav li:first-child {
+  margin-top: 150px;
+}
+
+.nav a {
+  color: #000;
+}
