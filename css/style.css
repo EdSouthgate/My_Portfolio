@@ -15,11 +15,34 @@ body {
   margin: 0px;
 }
 
+h1 {
+  font-family: Roboto Mono, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: Roboto Mono, sans-serif;
+  color: #fff;
+  font-weight: 100;
+  font-size: 36px;
+}
+
 a {
   text-decoration: none;
 }
 
 /* Positioning */
+.col-left{
+  width: 300px;
+  margin-left: 20.751173709%;
+}
+
+.col-right{
+  width:300px;
+  margin-left: calc(100% - 49.107981221%);
+}
 
 .center {
   text-align: center;
@@ -30,12 +53,19 @@ a {
 }
 
 /* Nav Bar */
-.nav img {
+#logo {
   width: 60px;
   margin-top: 50px;
   margin-right: 30px;
   background: rgba(0,0,0,0.7);
   border-radius: 8px;
+  padding: 0px 5px 0px 5px;
+}
+
+.nav-icon{
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: -15px;
 }
 
 .nav {
@@ -53,6 +83,7 @@ a {
   margin-right: 30px;
   margin-left: 0px;
   line-height: 24px;
+
 }
 
 .nav li:first-child {
@@ -61,4 +92,37 @@ a {
 
 .nav a {
   color: #000;
+}
+
+/* Nav Animation to be added*/
+
+/* Header */
+
+.header {
+  display: inline-block;
+  background: url(../images/Portrait.jpg) no-repeat top left scroll;
+  background-color: #89bdd3;
+  background-size: cover;
+  width: calc(100% - 135px);
+  height: auto;
+  /*padding-top: 48.07511737089202%;*/
+  margin-left: 135px;
+}
+
+.header h1 {
+  padding-left: 50%;
+  padding-top: 12%;
+  padding-bottom: 12%;
+}
+
+/* Coding */
+
+.coding {
+  background: url(../images/coding-background.jpg) no-repeat top left scroll;
+  background-size: cover;
+  width: calc(100% - 135px);
+  margin-left: 135px;
+  height: 800px;
+  display: inline-block;
+  background-color: #888888;
 }
