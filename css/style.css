@@ -33,32 +33,14 @@ a {
   text-decoration: none;
 }
 
-/* Positioning */
-.col-left{
-  width: 300px;
-  margin-left: 20.751173709%;
-}
 
-.col-right{
-  width:300px;
-  margin-left: calc(100% - 49.107981221%);
-}
-
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}
-
-/* Nav Bar */
+/* Header */
 .logo {
-
   margin-top: 50px;
   margin-left: 0px;
   height: 60px;
   min-height: 30px;
+  max-width: 135px;
   width: 135px;
   background: url(../images/logo.png);
   background-repeat: no-repeat;
@@ -73,21 +55,25 @@ a {
   margin-right: -15px;
 }
 
-.nav {
+.home-wrap .header {
   width: 135px;
   height: 100vh;
   background-color: #fff;
   position: fixed;
 }
 
-.nav-position {
+.header-position {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 135px;
+  top: 30px;
+  left: 0;
+  bottom: 30px;
 }
 
-.nav ul {
+.header ul {
   list-style: none;
   display: inline-block;
   font-family: Roboto Mono, sans-serif;
@@ -98,23 +84,42 @@ a {
   padding-right: 30px;
 }
 
-.nav li {
+.header li {
   margin-bottom: 10px;
 }
 
-.nav li:first-child {
+.header li:first-child {
   margin-top: 0px;
 }
 
-.nav a {
+.header a{
   color: #000;
 }
 
-/* Nav Animation to be added*/
+.email-link {
+  color: #000;
+  font-family: Roboto Mono, sans-serif;
+  font-weight: 200;
+}
+
+.header .email-link {
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 40%;
+  font-size: 16px;
+}
+
+.mobile-nav-toggle {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+  margin-right: 20px;
+  min-width: 50px;
+}
 
 /* Header */
 
-.header {
+.hero {
   display: inline-block;
   background: url(../images/Portrait.jpg) no-repeat top left scroll;
   background-color: #89bdd3;
@@ -125,7 +130,7 @@ a {
   margin-left: 135px;
 }
 
-.header h1 {
+.hero h1 {
   padding-left: 50%;
   padding-top: 12%;
   padding-bottom: 12%;
@@ -141,4 +146,46 @@ a {
   height: 800px;
   display: inline-block;
   background-color: #888888;
+}
+
+/* Media Queries */
+
+@media (max-width: 775px) {
+  .home-wrap .header {
+    display: block;
+    width: 100vw;
+    height: auto;
+    padding: 20px 0;
+
+  }
+
+  /* Responsive Header */
+  .header-position {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header ul {
+    display: none;
+  }
+
+  .email-link {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .hero, .coding {
+    margin-left: 0px;
+    width: 100%;
+  }
 }
