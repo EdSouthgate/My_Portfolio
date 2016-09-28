@@ -1,0 +1,141 @@
+.blue
+  background-color: $theme-color-1
+
+
+.photo-wrap
+  background-color: $theme-color-1
+  padding: 0
+  margin: 0
+  display: inline-block
+  flex-direction: rows
+  minimum-width: 100vw
+  justify-content: center
+
+.ul
+  list-style-type: none
+
+.photogrid-container
+  width: 640px
+  height: 100%
+  margin-left: calc(50% - 320px - 12px - 76px)
+  display: inline-block
+  margin-top: 40px
+  margin-bottom: 40px
+  background: #89bdd3
+  padding: 12px 0px 12px 24px
+  @media (max-width: 775px)
+    margin-left: calc(50% - 320px - 12px)
+
+  @media (max-width: 640px)
+    width: 320px
+    margin-left: calc(50% - 160px - 12px)
+  @media (max-width: 320px)
+    width: 160px
+    margin-left: calc(50% - 80px - 12px)
+
+  img
+    position: absolute
+    width: auto
+    height: auto
+
+  .img-1
+    top: 0px
+    left: 0px
+
+  .img-2
+    left: -150px
+
+  .img-3
+    left: -25px
+
+  .img-4
+    left: -80px
+
+  .img-5
+    left: -120px
+
+  .img-6
+    left: -40px
+
+  .img-7
+    left: -150px
+
+  .img-8
+    left: -30px
+
+  .img-10
+    left: -20px
+
+  .img-11
+    left: -20px
+
+  .img-12
+    left: -80px
+
+  .img-13
+    left: -155px
+
+  .img-14
+    left: -50px
+
+  .img-15
+    left: -35px
+
+  .img-16
+    left: -55px
+
+
+.col-25
+  width: 145px
+  height: 100%
+  background: #89bdd3
+  display: inline-block
+  margin: 0
+
+.box
+  width: 145px
+  height: 145px
+  background: white
+  margin-bottom: 12px
+  box-shadow: -4px 4px 10px rgba(0,0,0,0.5)
+  position: relative
+  clip: rect(0px, 145px, 145px, 0px)
+  overflow: hidden
+  &:hover
+    animation-name: grow
+    animation-duration: 300ms
+    animation-iteration-count: 1
+    animation-direction: forwards
+    animation-timing-function: ease-in-out
+    animation-fill-mode: forwards
+
+.oblong
+  width: 145px
+  height: 290px
+  background: white
+  position: relative
+  margin-bottom: 12px
+  box-shadow: -4px 4px 10px rgba(0,0,0,0.5)
+  clip: rect(0px, 145px, 290px, 0px)
+  overflow: hidden
+  &:hover
+    animation-name: grow
+    animation-duration: 300ms
+    animation-iteration-count: 1
+    animation-direction: forwards
+    animation-timing-function: ease-in-out
+    animation-fill-mode: forwards
+
+@keyframes grow
+  0%
+    transform: scale(1)
+  10%
+    transform: translateY(5px)
+  90%
+    transform: translateY(-10px)
+    border-radius: 15px
+  100%
+    transform: scale(1.05)
+    transform: translateY(-5px)
+    box-shadow: -10px 10px 10px rgba(0,0,0,0.3)
+    border-radius: 10px
